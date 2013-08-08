@@ -1,2 +1,1 @@
-tuto-homegame
-=============
+A quick R + Python script hack to extract game schedule from TUTO Hockey website and write a Google Calendar compatible CSV.
