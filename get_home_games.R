@@ -1,4 +1,7 @@
 ## Preprocessing - reading the game schedule and writing a csv of the home games
+# Dependencies: XML
+
+library(XML)
 
 URL <- 'http://www.tutohockey.fi/fi/ottelut/otteluohjelma-2013-14'
 
