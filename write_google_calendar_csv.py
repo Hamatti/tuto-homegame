@@ -1,5 +1,5 @@
 '''
-	Creates a Google calendar compatible CSV file 
+	Creates a Google calendar compatible CSV file
 	from the csv file that is created with get_home_games.R
 
 	Quick hack so it doesn't actually write csv, it just prints
@@ -16,14 +16,18 @@ from datetime import datetime, timedelta
 # Print some headers, very important stuff for Google Cal
 
 print 'Subject, Start Date, Start Time, End Date, End Time'
+header = True
 for line in open('tutohomegames.csv'):
-	_, date, time, place, home, away = line.split(',')
+	if header:
+		header = False
+		continue
+	_, date, time, place, home, away, _ = line.split(',')
 
 	# Name of the event
 	subject = '%s - %s' % (home.replace('"', ''), away.replace('"', ''))
 
-	# Convert date from 
-	# ke 11.9.2013 => 9/11/2013
+	# Convert date from
+	# Perjantai 12.09.14 => 9/12/2014
 
 	day = date.split()[1]
 	dates = day.split('.')
