@@ -1,4 +1,1 @@
-A quick R + Python script hack to extract game schedule from TUTO Hockey website and write a Google Calendar compatible CSV.
-
-Blog post (in Finnish)
-[https://toverikiekkoa.wordpress.com/2013/08/08/tuton-ensikauden-kotiottelut-google-kalenteriin/](https://toverikiekkoa.wordpress.com/2013/08/08/tuton-ensikauden-kotiottelut-google-kalenteriin/)
+A Python script to parse out [TUTO Hockey's home games](http://www.tutohockey.fi/fi/ottelut/otteluohjelma-2018-19) and save them in Google Calendar compatible format CSV file.
