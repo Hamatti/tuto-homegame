@@ -3,7 +3,7 @@
 
 library(XML)
 
-URL <- 'http://www.tutohockey.fi/fi/ottelut/otteluohjelma-2014-15'
+URL <- 'http://www.tutohockey.fi/fi/ottelut/otteluohjelma'
 
 table <- as.data.frame(readHTMLTable(URL))
 names(table) <- c('date', 'time', 'place', 'home', 'away')
